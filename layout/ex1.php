@@ -50,5 +50,5 @@ include "header.php" ?>
     ?>
 
     <h3> 4 Screenshot of the development environment</h3>
-    <img src="/ekq_tasks/images/dockerImage.png" alt="image of docker desktop" class="img-fluid">
+    <img src="/ekq_tasks/layout/dockerImage.png" alt="image of docker desktop" class="img-fluid">
     <?php include "footer.php" ?>
