@@ -18,7 +18,7 @@
     <div class="row">
   <nav class="navbar navbar-expand-lg" style="background-color: rgb(65, 7, 109);" >
   <div class="container-fluid">
-    <a class="navbar-brand" href="/ekq_tasks/ex1.php">Edem Quashigah</a>
+    <a class="navbar-brand" href="ex1.php">Edem Quashigah</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,7 +28,7 @@
           <a class="nav-link" aria-current="page" href="index.php" target="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="ex1_copy.php">Exercise 1</a>
+          <a class="nav-link" href="ex1.php">Exercise 1</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about_us.php">About Us</a>
