@@ -1,7 +1,5 @@
-<?php
-$title = "Exercise 1";
-include "header.php" ?>
-     <h3>3.1 Write a simple PHP script to print your information (Name and your groupid).</h3>
+<?php include "header.php" ?>
+<h3>3.1 Write a simple PHP script to print your information (Name and your groupid).</h3>
     <?php
     echo "Edem Quashigah <br>";
     echo "BBCAP22 <br>";
@@ -51,4 +49,5 @@ include "header.php" ?>
 
     <h3> 4 Screenshot of the development environment</h3>
     <img src="/ekq_tasks/images/dockerImage.png" alt="image of docker desktop" class="img-fluid">
-    <?php include "footer.php" ?>
+
+<?php include "footer.php" ?>
