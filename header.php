@@ -12,13 +12,13 @@
         crossorigin="anonymous"></script>
 
 
-    <link rel="icon" type="image/x-icon" href="images\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="project_files/images\favicon.ico">
 
     <link href="https://fonts.cdnfonts.com/css/roboto-condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <title>Edem Quashigah</title>
-    <link rel="stylesheet" href="styles.css">
+    <title><?php echo "$title"; ?></title>
+    <link rel="stylesheet" href="project_files/styles.css">
 
 </head>
 
@@ -39,7 +39,7 @@
 
             <a class="navbar-brand justify-content-start" href="index.php">
                 <!-- Liverpool logo in the navbar-->
-                <img class="navbar_logo" src="images/lfc_logo.png" alt="Liverpool FC logo">
+                <img class="navbar_logo" src="project_files/images/lfc_logo.png" alt="Liverpool FC logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -56,13 +56,13 @@
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Exercise 1</a>
+                        <a class="nav-link" href="layout/ex1.php" target ="_blank" >Exercise 1</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link" href="#">Exercise 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
+                        <a class="nav-link" href="#">Exercise 3</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
@@ -86,7 +86,7 @@
                 <div class="nav-item user-box ">
 
                     <a class="nav-link user-link " href="#">
-                        <img src="icons/user.svg" width="18" alt="Signup" class="nav-icon"> Join</a>
+                        <img src="project_files/icons/user.svg" width="18" alt="Signup" class="nav-icon"> Join</a>
 
 
                     <a class="nav-link user-link" href="#">Login</a>
@@ -95,7 +95,7 @@
                 </div>
                 <!--user-box login links end-->
                 <div class="nav-item justify-content-end sponser">
-                    <a href="https://www.sc.com/en/"><img src="images/sponser.svg" width="120" alt="sponser"></a>
+                    <a href="https://www.sc.com/en/"><img src="project_files/images/sponser.svg" width="120" alt="sponser"></a>
                 </div>
             </div>
         </nav>
