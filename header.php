@@ -62,7 +62,7 @@
                         <a class="nav-link" href="#">Exercise 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Exercise 3</a>
+                        <a class="nav-link" href="variable.php">Exercise 3</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>

@@ -81,6 +81,16 @@
                                 Sitemap - Privacy Policy - Terms & Conditions - About
                             </div>
                         </div>
+
+                        <!--FOOTER TIMESTAMP BEGINS HERE-->
+                        <div class="row footer-row-3">
+                            <div class="">
+                                <?php
+                                echo "Last modified on ";
+                                echo date("m.d.Y");
+                                ?>
+                            </div>
+                        </div>
                     </div>
 
                 </footer>
