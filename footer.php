@@ -84,14 +84,13 @@
 
                         <!--FOOTER TIMESTAMP BEGINS HERE-->
                         <div class="row footer-row-3">
-                            <div class="">
-                                <?php
-                                echo "Last modified on ";
-                                echo date("m.d.Y");
-                                ?>
+                            <div>
+                            <?php
+                            echo "<br> Last modified on " .  date ("l, F d Y H:i:s.",filemtime(basename($_SERVER['PHP_SELF'])));
+                            ?>
                             </div>
                         </div>
-                    </div>
+                    </div><
 
                 </footer>
                 <!--FOOTER ENDS HERE-->

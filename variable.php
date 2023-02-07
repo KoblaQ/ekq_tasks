@@ -127,10 +127,11 @@ Old table from exercise 1 3.5 without the bootstrap modifications.
 
 <div>
     <br>
-    <h3>Write a PHP script in the footer section of your universal footer just below the Copyright information to display the last modification time of a file. (Hint: Use predefined variable $_SERVER, basename function  to get the filename , filetime function to get the last modified time & date function to print the date and time)</h3>
+    <h3>7. Write a PHP script in the footer section of your universal footer just below the Copyright information to display the last modification time of a file. (Hint: Use predefined variable $_SERVER, basename function  to get the filename , filetime function to get the last modified time & date function to print the date and time)</h3>
     <br>
     <?php
-        
+    echo "Please refer to the footer of the page.... "
+
     ?>
 </div>
 
