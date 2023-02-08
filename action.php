@@ -6,8 +6,10 @@ include "header.php";
 <div 
 class = "wrapper" 
 style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
-    <?php 
-
+    
+    <?php
+    //Works with data from the Variable.php
+    if(isset($_POST["submitDetails"])) {
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $bdate = $_POST['bdate'];
@@ -18,10 +20,11 @@ style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
         echo "<h3>Your birthday is $bdate </h3>";
         echo "<h3>Your favorite color is $color </h3>";
 
-    echo "<h3>Hello $fname $lname. You are welcome to my site</h3>";
-    ?>
-    <?php
-    $fname = $_POST['fname'];
+        echo "<h3>Hello $fname $lname. You are welcome to my site</h3>";
+     } 
+     // Works with data from the Control.php
+     elseif(isset($_POST["submitEligible"])) {
+        $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $age = $_POST['age'];
 
@@ -33,7 +36,9 @@ style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
     } else {
         echo "<h1>I'm sorry $name, you are not eligible for voting</h1>";
     }
-    ?>
+
+     }
+    ?>    
 
 </div>
 

@@ -40,22 +40,57 @@ include "header.php"
                 echo "Fail";
             }
 
+        
+
 
            echo "<hr> <h3>4. Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting,)</h3>";
            
-            
-           
+            if(isset($_POST["first_name"]) && isset($_POST["last_name"]) && isset($_POST["age"])) {
+               $first_name = $_POST["first_name"];
+               $last_name = $_POST["last_name"];
+               $age = $_POST["age"];
 
+               echo "";
+            }
 
+            ?>
+<div>
+            <hr> 
+        <br>
+<form action="action.php" method="post">
+<div class = "row">
+    <div class="col">
+        <input type="text" name="fname" required placeholder="First Name" class="form-control"> <br>
+    
+    </div>
+    <div class="col">
+        <input type="text" name="lname" required placeholder="Last Name" class="form-control"> <br>
+    </div>
+</div>
+    <div class="row">
+        <div class="col">
+        Birth Date: <input type="number" name="age" class="form-control"> <br>
+        </div>
+    </div>
+    
+    
+    <input id ="age" type="submit" value="Submit" name="submitEligible" onclick="showAlert()">
+</form>
 
+<script>
+  function showAlert() {
+    alert("Data submitted successfully");
+  }
+</script>
+        </div>
+        
 
-
+        <?php
 
             echo "<hr>  <h3>5. Use IF statement with strops function to print the name of the browser as below: 
             If someone is using Chrome it should print, you are using Goolge Chrome….
         </h3>";
 
-                
             $user_agent = $_SERVER['HTTP_USER_AGENT'];
            echo "<br>";
             switch(true){
@@ -90,29 +125,7 @@ include "header.php"
             ?>
 
         </div>
-        <div>
-            <hr> 
-        <br>
-<form action="action.php" method="post">
-<div class = "row">
-    <div class="col">
-        <input type="text" name="fname" required placeholder="First Name" class="form-control"> <br>
-    
-    </div>
-    <div class="col">
-        <input type="text" name="lname" required placeholder="Last Name" class="form-control"> <br>
-    </div>
-</div>
-    <div class="row">
-        <div class="col">
-        Birth Date: <input type="number" name="age" class="form-control"> <br>
-        </div>
-    </div>
-    
-    
-    <input type="submit" value="Submit1">
-</form>
-        </div>
+        
     </div>
 
 

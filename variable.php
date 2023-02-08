@@ -33,8 +33,14 @@ include "header.php" ?>
     </div>
     
     
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" name="submitDetails" onclick="showAlert()">
 </form>
+
+<script>
+  function showAlert() {
+    alert("Data submitted successfully");
+  }
+</script>
 
 <br>
 
