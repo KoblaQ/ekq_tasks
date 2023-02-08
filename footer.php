@@ -86,7 +86,17 @@
                         <div class="row footer-row-3">
                             <div>
                             <?php
+
+                            /* LONG VERSION
                             echo "<br> Last modified on " .  date ("l, F d Y H:i:s.",filemtime(basename($_SERVER['PHP_SELF'])));
+                            echo $filename;
+                            echo "<br>". $bname;
+                            */
+                            $filename = $_SERVER['PHP_SELF'];
+                            $bname = basename($filename);
+                            
+                            echo "<br> Last modified on " . date("l, F d Y H:i:s.", filemtime($bname));
+                            
                             ?>
                             </div>
                         </div>

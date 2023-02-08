@@ -122,7 +122,7 @@ Old table from exercise 1 3.5 without the bootstrap modifications.
     <br>
     <?php
     echo $_SERVER['HTTP_USER_AGENT'];
-    ?>
+      ?>
 </div>
 
 <div>
