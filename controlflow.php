@@ -1,4 +1,4 @@
-<?php $title = "Control";
+<?php $title = "Control Flow";
 include "header.php"
     
 ?>

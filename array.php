@@ -42,6 +42,7 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
 </h3>
 <?php
     $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
+
     echo "<h4>a. ascending order sort by value</h4><br>";
     sort($courses3);
     for ($i = 0; $i < (count($courses3)); $i++){
@@ -91,7 +92,11 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
  $courses4=array("php", "html", "javascript", "cms", "project");
 </h3>
 <?php
-
+    $courses4=array("php", "html", "javascript", "cms", "project");
+    for ($i = 0; $i < (count($courses4)); $i++){
+        $coursesUpper = strtoupper($courses4[$i]);
+        echo $coursesUpper . "<br>";
+    }
 ?>
 
 </div>
@@ -99,7 +104,10 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
 <div>
     <hr> <h3>5. List all your favorite colors and their hexadecimal equivalents. (associative arrays)</h3>
 <?php
-
+$favColors = array("#880808" => "Blood Red", "#FFBF00" => "Amber", "#7FFFD4" => "Aquamarine", "	#F0FFFF" => "Azure", "	#E6E6FA" => "Lavender");
+    foreach($favColors as $hex => $colorName){
+        echo "<br>The hexadecimal for $colorName is $hex";
+    }
 ?>
 
 </div>
@@ -109,20 +117,65 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
 </h3>
 <?php
 
+$temps = array(78, 60, 62, 68, 71, 68, 73,
+85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 
+74, 62, 62, 65, 64, 68, 73, 75, 79, 73
+);
+$total = count($temps);
+echo $total;
+echo count($temps);
+echo count($temps);
+
+
+echo "<hr><h2> Calculation average temperature: </h2>";
+$month_temp = "78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 81, 76, 73,
+68, 72, 73, 75, 65, 74, 63, 67, 65, 64, 68, 73, 75, 79, 73";
+// what is explode and what does the below code do? : 
+echo "The <strong>explode</strong> function seperates the values of a string by the selected/ defined seperator parameter and then records and returns
+each of the remaining seperated string words into an array value. <br> Fortunately for the php language, we don't need to parse 
+the value type into a string or a number. <br><br>";
+print_r($month_temp);
+echo "<br>";
+
+$temp_array = explode(',', $month_temp);
+print_r($temp_array);
+$tot_temp = 0;
+// What is count? 
+echo "<br>The <strong>count</strong> function in this case counts and returns all the elements in an array. <br> 
+Knowing the count helps for example to easily print the values of the array through a loop. Bellow is the average of the temperatures.<br><br>";
+$temp_array_length = count($temp_array);
+foreach($temp_array as $temp)
+{
+ $tot_temp += $temp;
+}
+ $avg_high_temp = $tot_temp/$temp_array_length;
+ echo "Average Temperature is : ".$avg_high_temp."
+"; 
+// what does sort do?
+echo "<br> The <strong>sort</strong> function sorts the values of an array. This function by default sorts the values of the array in ascending order. asort does the same.  
+There are many types of sort functions like rsort that sorts the values of the array in descending order.";
+sort($temp_array);
+echo "<br> List of five lowest temperatures :";
+for ($i=0; $i< 5; $i++)
+{ 
+echo $temp_array[$i].", ";
+}
+echo "<br>List of five highest temperatures :";
+// explain the following loop
+for ($i=($temp_array_length-5); $i< ($temp_array_length); $i++)
+{
+echo $temp_array[$i].", ";
+}
+
+echo "<br><br> This is a <strong>for loop</strong>. This for-loop first uses \$temp_array_length variable which is essentially the total number of values in the array.
+With this method, it is important to note that the array has already been sorted by ascending order. This loop is now attempting to print out the last 5 values (the 5 highest values)
+For each value of the array starting from the 5th last value until the last value, it prints out that value and a comma";
 ?>
 
 </div>
 
 <div>
-    <hr> <h3>7. </h3>
-<?php
-
-?>
-
-</div>
-
-<div>
-    <hr> <h3>In Class Calculator</h3>
+    <hr> <h3>7. In Class Calculator</h3>
     <form action="" method="get">
         <input type="number" step = "any" placeholder="Enter first number" name="num1" required>
         <input type="number" step = "any" placeholder="Enter second number" name="num2" required>
@@ -168,6 +221,7 @@ $courses3=array("PHP", "HTML", "JavaScript", "CMS", "Project");
     ?>
 
 </div>
+
 </div>
 
 
