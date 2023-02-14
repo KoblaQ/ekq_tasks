@@ -1,5 +1,5 @@
 <?php $title = "Arrays";
-include "header.php"; ?>
+include 'header.php'; ?>
 
 <div class = "wrapper" style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
 <div>
@@ -227,4 +227,4 @@ echo $temp_array[$i].", ";
 
 
 
-<?php include "footer.php"; ?>
+<?php include 'footer.php'; ?>

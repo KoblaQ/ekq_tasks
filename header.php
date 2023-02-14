@@ -12,13 +12,13 @@
         crossorigin="anonymous"></script>
 
 
-    <link rel="icon" type="image/x-icon" href="project_files/images\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../project_files/images\favicon.ico">
 
     <link href="https://fonts.cdnfonts.com/css/roboto-condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title><?php echo "$title"; ?></title>
-    <link rel="stylesheet" href="project_files/styles.css">
+    <link rel="stylesheet" href="/ekq_tasks/project_files/styles.css">
 
 </head>
 
@@ -39,7 +39,7 @@
 
             <a class="navbar-brand justify-content-start" href="index.php">
                 <!-- Liverpool logo in the navbar-->
-                <img class="navbar_logo" src="project_files/images/lfc_logo.png" alt="Liverpool FC logo">
+                <img class="navbar_logo" src="/ekq_tasks/project_files/images/lfc_logo.png" alt="Liverpool FC logo">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,23 +53,43 @@
                     <li class="nav-item active">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="/ekq_tasks/index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="layout/ex1.php" target ="_blank" >Exercise 1</a>
+                        <a class="nav-link" href="/ekq_tasks/layout/ex1.php" >Exercise 1</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Exercise 2</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="variable.php">Exercise 3</a>
+                        <a class="nav-link" href="/ekq_tasks/variable.php">Exercise 3</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="controlflow.php">Exercise 4</a>
+                        <a class="nav-link" href="/ekq_tasks/controlflow.php">Exercise 4</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="array.php">Exercise 5</a>
+                        <a class="nav-link" href="/ekq_tasks/array.php">Exercise 5</a>
                     </li>
+
+                    <!--CRUD APP STARTS-->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CRUD
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/ekq_tasks/crudApp/create.php">Create</a>
+                            <a class="dropdown-item" href="/ekq_tasks/crudApp/read.php">Read</a>
+                            <a class="dropdown-item" href="/ekq_tasks/crudApp/updatesingle.php">Update</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/ekq_tasks/crudApp/db.php">Database</a>
+                        </div>
+                    </li>
+                    <!--CRUD APP ENDS-->
+
+                    
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
                     </li>
@@ -92,7 +112,7 @@
                 <div class="nav-item user-box ">
 
                     <a class="nav-link user-link " href="#">
-                        <img src="project_files/icons/user.svg" width="18" alt="Signup" class="nav-icon"> Join</a>
+                        <img src="/ekq_tasks/project_files/icons/user.svg" width="18" alt="Signup" class="nav-icon"> Join</a>
 
 
                     <a class="nav-link user-link" href="#">Login</a>
@@ -101,7 +121,7 @@
                 </div>
                 <!--user-box login links end-->
                 <div class="nav-item justify-content-end sponser">
-                    <a href="https://www.sc.com/en/"><img src="project_files/images/sponser.svg" width="120" alt="sponser"></a>
+                    <a href="https://www.sc.com/en/"><img src="/ekq_tasks/project_files/images/sponser.svg" width="120" alt="sponser"></a>
                 </div>
             </div>
         </nav>

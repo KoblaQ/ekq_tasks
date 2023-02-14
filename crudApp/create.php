@@ -2,7 +2,7 @@
 $title = "A simple CRUD app";
 include '../header.php';
 ?>
-
+<div class = "wrapper" style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
 <form method="post" action="">
     <input type="text" name="fname" placeholder="First Name" required><br><br>
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
@@ -16,6 +16,8 @@ include '../header.php';
     </select><br><br>
     <input type="submit" value="Submit" name="submit" id="">
 </form>
+</div>
+
 
 <?php
 if(isset($_POST["submit"])){
