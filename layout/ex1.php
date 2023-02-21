@@ -16,6 +16,18 @@ include "header.php" ?>
     <?php
     echo date("m.d.Y");
     ?>
+
+     <br>
+     <script>
+          document.write("Hello world this is JavaScript");
+     </script>
+
+     <noscript>
+          Please enable JavaScript to view this content.
+     </noscript>
+
+     <input type="button" onclick="hello()" value="Click Me">
+
     <h3>3.4 $title = "PHP is interesting”. Put this variable as a title marked as h1 (heading 1) in your HTML document.
     </h3>
 

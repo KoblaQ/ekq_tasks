@@ -100,7 +100,7 @@
                             ?>
                             </div>
                         </div>
-                    </div><
+                    </div>
 
                 </footer>
                 <!--FOOTER ENDS HERE-->

@@ -20,6 +20,10 @@
     <title><?php echo "$title"; ?></title>
     <link rel="stylesheet" href="/ekq_tasks/project_files/styles.css">
 
+    
+
+    <script src="/ekq_tasks/js/site.js"></script>
+
 </head>
 
 <body class="wrapper">

@@ -53,4 +53,39 @@ include "header.php" ?>
     <img src="/ekq_tasks/layout/dockerImage.png" alt="image of docker desktop" class="img-fluid">
 </div>
 
+<br>
+     <script>
+          document.write("Hello world this is JavaScript");
+     </script>
+
+     <noscript>
+          Please enable JavaScript to view this content.
+     </noscript>
+
+     <input type="button" onclick="hello()" value="Click Me">
+     <br>
+     <input type="button" onclick="add()" value="Click to add">
+     <hr>
+     <p id="place1" style = "color:red; background-color : yellow"> </p>
+     <span id="place2" style="background-color:blue;"> </span>
+     <script>
+        //window.alert
+        //window.alert("This will trigger an alert box");
+        //window.alert(5+10);
+        //document.write
+        //document.write("Hello this is interesting");
+        
+        document.getElementById("place1").innerHTML = "This will go to place1";
+        document.getElementById("place2").innerHTML = "This will go to span";
+     </script>
+    <hr>
+     <h2> Changing Background Color</h2>
+     <form action="">
+        <input type="color" name="background" onchange="changeColor('background', this.value)">
+     </form>
+     
+
+    
+     
+
 <?php include "footer.php" ?>
