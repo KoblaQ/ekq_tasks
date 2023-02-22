@@ -3,8 +3,9 @@ $title = "A simple CRUD app";
 include '../header.php';
 ?>
 <div class = "wrapper" style="max-width:80%; margin: auto; background-color:#d4d4d4; padding:20px;">
-<form method="post" action="">
-    <input type="text" name="fname" placeholder="First Name" required><br><br>
+
+<form method="post" action="" onsubmit="return crud()" name="form1">
+    <input type="text" name="fname" placeholder="First Name" required onblur="fname()"><br><br>
     <input type="text" name="lname" placeholder="Last Name" required><br><br>
     <input type="text" name="city" placeholder="City" required><br><br>
     <select name="groupid" id="">

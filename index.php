@@ -83,6 +83,21 @@ include "header.php" ?>
      <form action="">
         <input type="color" name="background" onchange="changeColor('background', this.value)">
      </form>
+
+     <hr>
+     <form method="post" action="" onsubmit="return crud()" name="form1">
+    <input type="text" name="fname" placeholder="First Name" required onblur="fname()"><br><br>
+    <input type="text" name="lname" placeholder="Last Name" required><br><br>
+    <input type="text" name="city" placeholder="City" required><br><br>
+    <select name="groupid" id="">
+        <option value="BBCAP22">BBCAP22</option>
+        <option value="BBCAP21">BBCAP21</option>
+        <option value="Others">Others</option>
+
+
+    </select><br><br>
+    <input type="submit" value="Submit" name="submit" id="">
+</form>
      
 
     
